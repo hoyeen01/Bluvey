@@ -1,42 +1,74 @@
-/* Add a black background color to the top navigation */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(244, 233, 235);
+    margin: 0;
+}
+
 .topnav {
-    background-color: #333;
+    background-color: rgb(244, 233, 235);
     overflow: hidden;
-  }
+}
+
+.topnav .brand {
+    font-size: 50px;
+    color: black;
+    padding: 20px;
+    margin-right: 20%;
+}
+
   
   /* Style the links inside the navigation bar */
-  .topnav a {
+.topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 18px;
     text-decoration: none;
-    font-size: 17px;
-  }
+    font-size: 17px
+}
+
+.topnav .nav-link {
+    margin-top: 30px;
+}
   
   /* Change the color of links on hover */
-  .topnav a:hover {
+.topnav a:hover {
     background-color: #ddd;
     color: black;
-  }
+}
   
   /* Add an active class to highlight the current page */
-  .topnav a.active {
-    background-color: #04AA6D;
+.topnav a.active {
+    background-color: black;
     color: white;
-  }
-
-  .topnav a.sign {
-    background-color: #04AA6D;
     float: right;
-  }
+    margin-top: 20px;
+}
 
-  .topnav a.sign2 {
-    float: right;
-  }
+.blu-tag {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
 
-  input[type=text], select, textarea {
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+  
+  /* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -48,7 +80,7 @@
   }
   
   /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+input[type=submit] {
     background-color: #04AA6D;
     color: white;
     padding: 12px 20px;
@@ -58,15 +90,54 @@
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: #45a049;
   }
   
   /* Add a background color and some padding around the form */
-  .container {
+.container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
   }
+
+.about-section {
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+}
   
-  
+.column2 {
+  width: 30%;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}

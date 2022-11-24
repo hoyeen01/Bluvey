@@ -8,16 +8,28 @@
     <link rel="stylesheet" href="bluvey.css"/>
 </head>
 <body>
-    <div class="topnav">
-        <a class="active" href="bluvey.html">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a class="sign" href="sign_up.html">Sign Up</a>
-        <a class="sign2" href="sign_in.html">Sign In</a>
-    </div>
-    <h1>My Mini Website</h1>
-    <div class="container" id="contact">
+    <header>
+       <div class="topnav">
+            <a class="brand" href="bluvey.html"><b>Bluvey</b></a>
+            <a class="nav-link" href="bluvey.html"><b>Home</b></a>
+            <a class="nav-link" href="#about"><b>About Us</b></a>
+            <a class="nav-link" href="#contact"><b>Contact</b></a>
+            <a class="nav-link" href="sign_in.html"><b>Sign In</b></a>
+            <a class="active" href="sign_up.html"><b>Sign Up</b></a>
+       </div>
+    </header>
+        <div class="blu-tag"><h3>Welcome To Bluvey Fashion Blog</h3></div>
+        <div class="row">
+            <div class="column">
+                <img src="\images\fashionista.jpg" alt="sexy birthday outfit" width="100%">
+            </div>
+            <div class="column">
+                <img src="\images\real.jpg" alt="simple outfit" width="100%">
+            </div>
+        </div>
+
+    <section id="contact">
+      <div class="container">
         <form action="action_page.php">
       
           <label for="fname">First Name</label>
@@ -40,6 +52,36 @@
       
         </form>
       </div>
+    </section>
+
+    <section id="about">
+      <div class="about-section">
+        <h1 style="text-align:center">About Us</h1>
+        <p><b>We are a team of people who bring people daily fashion lifestyle to your view</p>
+        <p>In life, there are lots of people who do not know what they are good at yet.</p>
+        <p>Especially the upcoming youths, teens who have a passion for fashion<br>but do not know where or how to start.</p>
+        <p>This website is made for you, you do not need to have hd camera or be a pro photographer,<br> a model or a fashion icon to know fashion, you can start from somewhere,<br> wear what you have with confidence and use your talent to make a cheap clothing into something worth looking at.</p>
+        <p>All it takes is taking the first step and we are here to show the world what you can do.</p>
+        <p>We are here to take the step with you.</p>
+        <p><b>Be your own fashion icon.</b></p>
+      </div>
+      
+      <div class="row">
+        <div class="column2">
+          <div class="card2">
+            <img src="\images\author.JPG" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Hoyeen</h2>
+              <p class="title"><b>Author</b></p>
+              <p>I like fashion and i believe lots of people do too<br> but most people believe you have to be rich to be fashionable.</p>
+              <p>We are here to change that, you don't have to be rich, all it takes is that one step that you need to ake to bring out the creativity in you and we are here to make that happen. </p>
+              <p>kheerah102@gmail.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
